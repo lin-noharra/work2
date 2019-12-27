@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Books</h1>
+<h1>
+
+
+  <%= link_to 'New Book', new_book_path, class: 'header-menu' %>
+
+  Books</h1>
 
 <table>
   <thead>
@@ -25,7 +30,7 @@
     <% end %>
   </tbody>
 </table>
-
+<p>
+<%= link_to(image_tag("hana.JPG",size:"40x40",alt:"",align:"right")) %>
+</p>
 <br>
-
-<%= link_to 'New Book', new_book_path %>
